@@ -34,7 +34,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 /* */
 
-
 .link_section_styles_main_background {
     height: 700px;
     margin-top: auto;
@@ -76,6 +75,8 @@ article, aside, footer, header, hgroup, main, nav, section {
     line-height: 2;
     font-family: HelveticaBold;
     font-size: 14px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .link_section_styles_author_photo {

@@ -86,3 +86,111 @@ function draw_triangle() {
 }
 
 
+
+/*
+ function add_array(){
+ var elements = document.getElementById('add_array').value;
+ var array = elements.split("");
+ document.getElementById('show_array').innerHTML = array;
+ }
+
+ function qqq(){
+ var ar = document.getElementById('show_array').innerHTML;
+ var str = ar.split("");
+ var q = 0;
+ for(i=0; i<str.length; i++){
+ q += parseInt(str[i]);
+ }
+
+ alert(q);
+
+ var rev = str.reverse();
+ alert(rev);
+ }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function array_add(){
+    var elements = document.getElementById('add_array').value;
+    var array = elements.split(" ");
+    document.getElementById('show_array').innerHTML = array;
+}
+
+function array_elem_sum() {
+    var array = document.getElementById('show_array').innerHTML;
+    var count = 0;
+    for (i = 0; i < array.length; i++) {
+        count += parseInt(array[i]);
+    }
+    document.getElementById('func_side').innerHTML = count;
+}
+
+function array_elem_reverse() {
+    var array = document.getElementById('show_array').innerHTML;
+    array = array.split("");
+    var reverse = array.reverse();
+    document.getElementById('func_side').innerHTML = reverse;
+}
+
+function mix_arguments() {
+    var array_name = document.getElementById('show_array').innerHTML;
+    array_name = array_name.split("");
+    var symbol = prompt('Symbol number?');
+    var operation = prompt('Operation(add/remove/other words)?');
+    switch (operation) {
+        case 'add':
+            array_name.push(symbol);
+            document.getElementById('func_side').innerHTML = array_name;
+            break;
+        case 'remove':
+            delete array_name [symbol];
+            document.getElementById('func_side').innerHTML = array_name;
+            break;
+        default:
+            document.getElementById('func_side').innerHTML = 'Wrong operation!';
+    }
+}
+
+function build_list() {
+    var answer = true;
+    document.getElementById('func_side').innerHTML = 'To do: ';
+    while (answer) {
+        answer = prompt('What to do?');
+        if (answer) {
+            var ul = document.getElementById("func_side");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(answer));
+            ul.appendChild(li);
+        }
+    }
+}
+
+

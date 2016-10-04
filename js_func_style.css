@@ -1,6 +1,13 @@
-.button_side {
+.button_side_old {
     width: 1600px;
-    height: 200px;
+    height: 100px;
+    position: relative;
+    background-color: #9d9d9d;
+}
+
+.button_side_new {
+    width: 1600px;
+    height: 100px;
     position: relative;
     background-color: #9d9d9d;
 }

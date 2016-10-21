@@ -1,7 +1,7 @@
 /* active_box_app_font */
 @font-face {
     font-family: 'RaleWayRegular';
-    src: url('../../src/font/raleway.regular.ttf') format('truetype');
+    src: url('../../../src/font/raleway.regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'RaleWayBold';
-    src: url('../../src/font/raleway.bold.ttf') format('truetype');
+    src: url('../../../src/font/raleway.bold.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'RaleWayLight';
-    src: url('../../src/font/Raleway-Light.ttf') format('truetype');
+    src: url('../../../src/font/Raleway-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'OpenSansBold';
-    src: url('../../src/font/OpenSans-Bold.ttf') format('truetype');
+    src: url('../../../src/font/OpenSans-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'CardoItalic';
-    src: url('../../src/font/Cardo-Italic.ttf') format('truetype');
+    src: url('../../../src/font/Cardo-Italic.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -42,8 +42,9 @@
 /* active_box_app_font */
 
 /* acive_box_app_main_style */
+
 body {
-    background-image: url(../../src/img/main_style/wood.jpg);
+    background-image: url(../../../src/img/main_style/wood.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -219,147 +220,6 @@ section {
 
 /* acive_box_app_main_style */
 
-/* acive_box_app_header */
-
-.acive_box_app_header_text_block {
-    padding-top: 25%;
-}
-
-.acive_box_app_header_text_block h1 {
-    color: #fff;
-    font-family: "OpenSansBold", "Open Sans", sans-serif;
-    font-size: 65px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.acive_box_app_header_text_block p {
-    color: #fff;
-    font-family: "RaleWayRegular", sans-serif;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 80px;
-}
-
-.acive_box_app_header_pannel {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    background-color: #292c47;
-    min-height: 100px;
-}
-
-.acive_box_app_header_pannel .acive_box_app_header_pannel_content {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    margin: 40px auto;
-    max-width: 1170px;
-    padding: 0;
-    width: 100%;
-}
-
-.acive_box_app_header_pannel .main_logo {
-    float: left;
-}
-
-.acive_box_app_header_pannel.fixed {
-    background-color: #292c47;
-}
-
-.acive_box_app_header_pannel.fixed .acive_box_app_header_pannel_content {
-    border-bottom: 0;
-    padding: 25px 0;
-}
-
-.acive_box_app_header_navigation_bar {
-    float: right;
-}
-
-.acive_box_app_header_navigation_bar li {
-    display: inline-block;
-}
-
-.acive_box_app_header_navigation_bar a {
-    color: rgba(255, 255, 255, 0.75);
-    font-family: "RaleWayBold", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    margin-left: 40px;
-    text-transform: uppercase;
-}
-
-.acive_box_app_header_navigation_bar a:hover, .acive_box_app_header_navigation_bar a.active {
-    color: #fff;
-    text-decoration: none;
-    -moz-transition: background-color, color, 0.3s;
-    -o-transition: background-color, color, 0.3s;
-    -webkit-transition: background-color, color, 0.3s;
-    transition: background-color, color, 0.3s;
-}
-
-ul.acive_box_app_header_navigation_bar li.adaptive_icon {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 13px;
-    font-weight: 700;
-    margin-right: 40px;
-    text-transform: uppercase;
-    display: none;
-}
-
-.adaptive_icon {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-}
-
-.adaptive_icon:hover, .adaptive_icon:focus, .adaptive_icon:active {
-    -webkit-transform: scale(2.1);
-    transform: scale(2.1);
-}
-
-/* acive_box_app_header */
-
-/* acive_box_app_advance_section */
-.acive_box_app_advantage {
-    margin-bottom: 50px;
-}
-
-.acive_box_app_advantage_content {
-    padding: 0 15px;
-    margin-top: 30px;
-}
-
-.acive_box_app_advantage_content h2 {
-    font-family: "RaleWayBold", sans-serif;
-    font-size: 14px;
-    color: #2d3033;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.acive_box_app_advantage_content p {
-    font-family: "RaleWayRegular", sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #6c7279;
-}
-
-.acive_box_app_advantage .acive_box_app_advantage_content_icon {
-    color: #e84545;
-    font-size: 60px;
-}
-
-/* acive_box_app_advance_section */
-
 /* acive_box_app_portfolio_section */
 
 .row.no-gutter {
@@ -462,222 +322,6 @@ ul.acive_box_app_header_navigation_bar li.adaptive_icon {
 }
 
 /* acive_box_app_portfolio_section */
-
-/* acive_box_app_team_section */
-
-.acive_box_app_teammate {
-    max-width: 270px;
-}
-
-.acive_box_app_teammate_inform_block {
-    margin-top: 20px;
-}
-
-.acive_box_app_teammate h4 {
-    font-family: "RaleWayRegular", sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: #2d3033;
-    text-align: left;
-}
-
-.acive_box_app_teammate h5 {
-    color: #e84545;
-    font-family: "RaleWayRegular", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    height: 15px;
-    text-align: left;
-}
-
-.acive_box_app_teammate p {
-    color: #6c7279;
-    font-family: "RaleWayRegular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-}
-
-.acive_box_app_teammate_social_link {
-    margin-top: 0;
-    padding: 0;
-    text-align: left;
-}
-
-.acive_box_app_teammate_social_link li {
-    display: inline-block;
-}
-
-.acive_box_app_teammate_social_link a {
-    border: 1px solid #e8ecee;
-    background-color: #c6cacc;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    color: #FFFFFF;
-    display: block;
-    font-size: 18px;
-    height: 40px;
-    line-height: 40px;
-    margin-right: 5px;
-    text-align: center;
-    width: 40px;
-}
-
-.acive_box_app_teammate_social_link a:hover {
-    border-color: #e84545;
-    color: #fff;
-}
-
-/* acive_box_app_team_section */
-
-/* acive_box_app_comment_section */
-
-.acive_box_app_comment {
-    position: relative;
-}
-
-.acive_box_app_comment_person {
-    display: block;
-    max-width: 50%;
-    height: auto;
-    float: left;
-}
-
-.acive_box_app_comment_blockquote {
-    display: block;
-    max-width: 50%;
-    height: auto;
-    float: right;
-}
-
-.acive_box_app_comment p {
-    font-family: "CardoItalic", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    color: #FFFFFF;
-    margin-left: 80px;
-    margin-top: 70px;
-}
-
-.acive_box_app_comment cite {
-    font-family: "RaleWayBold", sans-serif;
-    color: #FFFFFF;
-    display: block;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 80px;
-    margin-top: 30px;
-}
-
-/* acive_box_app_comment_section */
-
-/* acive_box_app_download_section */
-
-.acive_box_app_download {
-    text-align: center;
-}
-
-.acive_box_app_download h3 {
-    font-family: "RaleWayLight", sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    color: #2d3033;
-    margin-top: 0;
-}
-
-.acive_box_app_download p {
-    font-family: "RaleWayBold", sans-serif;
-    font-size: 13px;
-    color: #2d3033;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.acive_box_app_download .acive_box_app_button {
-    margin-top: 30px;
-}
-
-/* acive_box_app_download_section */
-
-/* acive_box_app_footer */
-.acive_box_app_footer {
-    text-align: center;
-}
-
-.acive_box_app_footer_top {
-    background-color: rgba(58, 62, 100, 0.98);
-    padding-top: 55px;
-}
-
-.acive_box_app_footer_bottom {
-    background-color: rgb(49, 52, 84);
-    padding: 22px 0;
-}
-
-.acive_box_app_footer_collumn {
-    margin-bottom: 80px;
-}
-
-.acive_box_app_footer h5 {
-    font-family: "RaleWayBold", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.acive_box_app_footer p {
-    font-family: "RaleWayRegular", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #9395a6;
-}
-
-.acive_box_app_footer a {
-    color: #fff;
-}
-
-.acive_box_app_footer a:hover {
-    color: #e84545;
-    text-decoration: none;
-}
-
-.acive_box_app_footer_social_link {
-    margin-top: 0;
-    padding: 0;
-}
-
-.acive_box_app_footer_social_link li {
-    display: inline-block;
-}
-
-.acive_box_app_footer_social_link a {
-    border: 1px solid #e8ecee;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    color: #FFFFFF;
-    display: block;
-    font-size: 18px;
-    height: 40px;
-    line-height: 40px;
-    margin-right: 5px;
-    text-align: center;
-    width: 40px;
-}
-
-.acive_box_app_footer_social_link a:hover {
-    border-color: #e84545;
-    color: #fff;
-}
-
-/* acive_box_app_footer */
 
 /* acive_box_app_adaptive */
 

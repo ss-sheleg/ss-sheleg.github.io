@@ -119,3 +119,71 @@ $(document).ready(function photo_effect() {
             $(this).removeClass("hover");
         });
 });
+
+/* contact_form_widget */
+jQuery(document).ready(function () {
+
+    $("#contact-form-widget-send-section-button").click(function () {
+        var mail = $("#text-section-mail-adress-form").val();
+        var subject = $("#text-section-mail-subject-form").val();
+        var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+        var validmail = pattern.test(mail);
+
+        if (validmail !== true) {
+            $("#text-section-mail-adress-form").css({"border": "1px solid red", "color": "red"});
+            $("#text-section-mail-adress-form").val("This is not mail adress");
+            var timerId1 = setTimeout(function () {
+                $("#text-section-mail-adress-form").css({"border": "1px solid #e5d4c2", "color": ""});
+                $("#text-section-mail-adress-form").val("");
+            }, 2000)
+        }
+
+        if (mail == "") {
+            $("#text-section-mail-adress-form").css({"border": "1px solid red", "color": "red"});
+            $("#text-section-mail-adress-form").val("Mail adress is empty");
+            var timerId1 = setTimeout(function () {
+                $("#text-section-mail-adress-form").css({"border": "1px solid #e5d4c2", "color": ""});
+                $("#text-section-mail-adress-form").val("");
+            }, 2000)
+        }
+
+        if (subject == "") {
+            $("#text-section-mail-subject-form").css({"border": "1px solid red", "color": "red"});
+            $("#text-section-mail-subject-form").val("Mail must have subject");
+            var timerId2 = setTimeout(function () {
+                $("#text-section-mail-subject-form").css({
+                    "border": "1px solid #e5d4c2",
+                    "color": ""
+                });
+                $("#text-section-mail-subject-form").val("");
+            }, 2000)
+        }
+
+        if (validmail === true && mail !== "" && subject !== "") {
+            if ($("#copycheckbox").prop("checked")) {
+                var text = "Your contact information was sent and copy was saved";
+                $("#contact-form-widget-send-section-button").css({
+                    "backgroundColor": "green"
+                });
+            } else {
+                var text = "Your contact information was sent";
+                $("#contact-form-widget-send-section-button").css({
+                    "backgroundColor": "green"
+                });
+            }
+
+            $("#text-section-mail-adress-form").val("");
+            $("#text-section-mail-subject-form").val("");
+            $("#contact-form-widget-text-section-message-form").val("");
+            document.getElementById('modal_sending_info').innerHTML = text;
+
+            $("#contact-form-widget-text-section-emails").fadeOut(5);
+            $("#contact-form-widget-text-section-emails").empty();
+        }
+    });
+});
+
+function refresh_contact_form() {
+    document.getElementById('modal_sending_info').innerHTML = '';
+    document.getElementById('contact-form-widget-send-section-button').style.backgroundColor = '#e84545';
+}

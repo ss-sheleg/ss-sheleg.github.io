@@ -14,12 +14,16 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/font/icomoon/active_box_icon.css">
     <link rel="stylesheet" href="src/css/sprite_style.css">
     <link rel="stylesheet" href="src/css/jquery.fancybox.css">
     <link rel="stylesheet" href="src/css/owl.carousel.css">
     <link rel="stylesheet" href="src/css/owl.theme.css">
-    <link rel="stylesheet" href="src/css/active_box_app_style.css">
+
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
+
+    <link rel="stylesheet/less" type="text/css" href="src/less_style/active_box_style.less"/>
+    <script src="src/less/dist/less.js" type="text/javascript"></script>
 
     <script src="src/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -45,7 +49,7 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#download">Download</a></li>
+                    <li><a href="#contact">Contact form</a></li>
                     <li class="adaptive_icon">
                         <a href="#" onclick="nav_bar_adaptive()">☰</a>
                     </li>
@@ -74,7 +78,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-sm-6 acive_box_app_advantage text-center">
-                    <span class=""></span>
+                    <span class="acive_box_app_advantage_content_icon active_box_icon icon-pencil"></span>
                     <div class="acive_box_app_advantage_content">
                         <h2>Easily Customised</h2>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
@@ -83,7 +87,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-6 acive_box_app_advantage text-center">
-                    <span class=""></span>
+                    <span class="acive_box_app_advantage_content_icon active_box_icon icon-desctop"></span>
                     <div class="acive_box_app_advantage_content">
                         <h2>Responsive Ready</h2>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
@@ -92,7 +96,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-6 acive_box_app_advantage text-center">
-                    <span class=""></span>
+                    <span class="acive_box_app_advantage_content_icon active_box_icon icon-light_bulb"></span>
                     <div class="acive_box_app_advantage_content">
                         <h2>Modern Design</h2>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
@@ -103,7 +107,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 col-sm-6 acive_box_app_advantage text-center">
-                    <span class=""></span>
+                    <span class="acive_box_app_advantage_content_icon active_box_icon icon-genious"></span>
                     <div class="acive_box_app_advantage_content">
                         <h2>Clean Code</h2>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
@@ -112,7 +116,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-6 acive_box_app_advantage text-center">
-                    <span class=""></span>
+                    <span class="acive_box_app_advantage_content_icon active_box_icon icon-bag_pack"></span>
                     <div class="acive_box_app_advantage_content">
                         <h2>Ready to Ship</h2>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
@@ -121,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-6 acive_box_app_advantage text-center">
-                    <span class="icon"></span>
+                    <span class="acive_box_app_advantage_content_icon active_box_icon icon-cloud"></span>
                     <div class="acive_box_app_advantage_content">
                         <h2>Download for Free</h2>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
@@ -369,20 +373,84 @@
 </section>
 <!-- active_box_reviews_section -->
 
-<!-- active_box_download_section -->
-<section id="download">
-    <div class="acive_box_app_download">
-        <div class="container">
+<!-- active_box_contact_section -->
+<section id="contact">
+    <div class="acive_box_app_contact">
+        <div class="container-fluid">
+
             <div class="col-md-12 text-center">
-                <h3>Are You Ready to Start? Download Now For Free!</h3>
-                <p>Fusce dapibus, tellus ac cursus commodo</p>
-                <a href="http://kamalchaneman.com/" class="acive_box_app_button acive_box_app_button_large">Download
-                    Here</a>
+                <h3>Send Your contact information, if You want more to know!</h3>
+                <p>If You have questions or want to get our company news?! </p>
+                <a data-toggle="modal" data-target="#myModal" class="acive_box_app_button acive_box_app_button_large">Get
+                    contact form</a>
+            </div>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <div class="modal-content" id="acive_box_app_contact_modal">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Contact Form:</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <ul class="flex-outer">
+                                <li>
+                                    <label id="contact-form-widget-text-section-subject-form-name">Mail
+                                        adress:</label>
+                                    <input id="text-section-mail-adress-form" type="text"
+                                           name="mailadress" placeholder="You can add mail adress">
+                                </li>
+
+                                <li>
+                                    <label
+                                        id="contact-form-widget-text-section-contacts-form-name">Subject:</label>
+                                    <input id="text-section-mail-subject-form" type="email" name="mailsubject"
+                                           placeholder="Add subject">
+                                    <span
+                                        id="contact-form-widget-text-section-contacts-form-add-button icon-add-button"
+                                        data-active="true"></span>
+                                </li>
+
+                                <li>
+                                    <label
+                                        id="contact-form-widget-text-section-message-form-name">Message:</label>
+                                    <textarea id="contact-form-widget-text-section-message-form" rows="10"
+                                              name="mailmessage"
+                                              placeholder="Leave your message here"></textarea>
+                                </li>
+
+                                <li>
+                                    <input id="copycheckbox" type="checkbox"
+                                           name="copycheckbox">
+                                    <label for="copycheckbox"><span
+                                        id="contact-form-widget-send-section-copy-checkbox-name">Save a copy</span></label>
+
+                                    <span id="contact-form-widget-send-section-button-block"></span>
+                                    <button class="acive_box_app_button acive_box_app_button_large" type="button"
+                                            id="contact-form-widget-send-section-button">Send contact info
+                                    </button>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <div id="modal_sending_info"></div>
+                            <button type="button" class="acive_box_app_button acive_box_app_button_large"
+                                    data-dismiss="modal" onclick="refresh_contact_form()">Close form
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- active_box_download_section -->
+<!-- active_box_contact_section -->
 
 <!-- active_box_footer -->
 <footer class="acive_box_app_footer">

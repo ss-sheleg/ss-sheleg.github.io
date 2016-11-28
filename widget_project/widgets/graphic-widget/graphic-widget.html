@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Widget</title>
+    <link rel="stylesheet" href="css/graphic-style.css" type="text/css">
+</head>
+<body>
+<div class="graphic-widget">
+    <div class="graphic-widget-diagram-wrapper">
+        <div class="graphic-widget-background-top-line-diagram"></div>
+        <div class="graphic-widget-background-bottom-line-diagram"></div>
+        <div class="graphic-widget-line-diagram-indication">
+            <div class="triangle-up"></div>
+            <span class="graphic-widget-line-diagram-indication-text1"></span>
+            <span class="graphic-widget-line-diagram-indication-text2"></span>
+         </div>
+        <div class="graphic-widget-bar-graph-wrapper"></div>
+        <div class="graphic-widget-line-diagram">
+            <svg id="graphic-widget-line-diagram" width="240" height="90">
+                <path id="graphic-widget-line-diagram-path" />
+            </svg>
+        </div>
+
+    </div>
+
+    <div class="graphic-widget-date-place">
+        <p class="graphic-widget-date-time-indication"></p>
+        <p class="graphic-widget-position-indication">Salt Lake City, Utah</p>
+    </div>
+    <div class="graphic-widget-trading">
+        <div class="graphic-widget-trading1">
+            <div class="graphic-widget-trading1-indication">
+                <p style="font-size: 18px; letter-spacing: -0.025em">13.5 M</p>
+                <p style="font-size: 12px; letter-spacing: -0.005em">Shares Traded</p>
+            </div>
+        </div>
+        <div class="graphic-widget-trading2">
+            <div class="graphic-widget-trading2-indication">
+                <p style="font-size: 18px; letter-spacing: -0.025em">28.44 B</p>
+                <p style="font-size: 12px; letter-spacing: -0.005em">Market Cap</p>
+            </div>
+        </div>
+    </div>
+    <div class="graphic-widget-background-bar-chart">
+        <h4 class="graphic-widget-bar-chart-header">AAPL</h4>
+        <h4 class="graphic-widget-year-changing-window-header">Yearly Change</h4>
+        <div class="graphic-widget-bar-chart">
+        </div>
+        <div class="graphic-widget-year-changing-window">+127. 01</div>
+    </div>
+    <script src="libs/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="js/graphic-widget.js"></script>
+</div>
+</body>
+</html>

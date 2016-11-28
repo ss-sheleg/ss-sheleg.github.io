@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "mark-team-icon";
+    src: url("../fonts/mark-team-icon/mark-team-icon.eot");
+    src: url("../fonts/mark-team-icon/mark-team-icon.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/mark-team-icon/mark-team-icon.woff") format("woff"),
+    url("../fonts/mark-team-icon/mark-team-icon.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "opensans-regular";
+    src: url("../fonts/opensans-regular/opensans-regular.eot");
+    src: url("../fonts/opensans-regular/opensans-regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/opensans-regular/opensans-regular.woff") format("woff"),
+    url("../fonts/opensans-regular/opensans-regular.ttf") format("truetype"),
+	url("../fonts/opensans-regular/opensans-regular.svg") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "opensans-bold";
+    src: url("../fonts/opensans-bold/opensans-bold.eot");
+    src: url("../fonts/opensans-bold/opensans-bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/opensans-bold/opensans-bold.woff") format("woff"),
+    url("../fonts/opensans-bold/opensans-bold.ttf") format("truetype"),
+	url("../fonts/opensans-bold/opensans-bold.svg") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../images/Background.png) no-repeat;
+}
+.profile-widget {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 283px;
+	height: 312px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 12px 0px rgba(171, 139, 110, 0.38);
+	background-color: #ffffff;
+}
+.profile-widget-avatar {
+	background-color: #b1a599;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 283px;
+	height: 124px;
+	border-radius: 5px 5px 0 0;
+	box-shadow: inset 0px -2px 2px 0px rgba(73, 73, 73, 0.36); 
+}
+.profile-widget-avatar-image {
+	position: absolute;
+	top: 15px;
+	left: 21px;
+	border-radius: 50%;
+	border: 6px solid transparent;
+	box-shadow: 0 0 0 1px #8a7e72;
+}
+.profile-widget-avatar-user-name {
+	font-family: 'opensans-bold';
+	font-size: 17px;
+	text-transform: uppercase;
+	line-height: 1;
+	color: #ffffff;
+	width: 162px;
+	height: 40px;
+	position: absolute;
+	top: 34px;
+	left: 121px;
+}
+.profile-widget-avatar-user-info {
+	font-family: 'opensans-regular';
+	font-size: 13px;
+	letter-spacing: -0.6px;
+	color: #3a2f24;
+	position: absolute;
+	top: 75px;
+	left: 121px;
+	width: 162px;
+	height: 30px;
+}
+.profile-widget-data {
+	position: absolute;
+	top: 124px;
+	width: 283px;
+	height: 188px;
+	border-radius:  0 0 5px 5px;
+}
+.profile-widget-main-menu li {
+	list-style-type: none;
+}	
+.profile-widget-main-menu li a {
+	position: relative;
+	float: left;
+	text-decoration: none;
+	width: 283px;
+	height: 47px;
+	display: block;
+	padding-left: 3px;
+	box-sizing: border-box;
+	font-family: 'opensans-regular';
+	font-size: 15px;
+	color: #8e8071;
+}	
+.profile-widget-main-menu a:hover {
+	background-color: #f8f3f0;
+	width: 283px;
+	height: 47px;
+	padding-left: 0;
+	border-left: 3px solid #4daf7b;
+	box-sizing: border-box;
+}
+.profile-widget-main-menu li:last-child:hover a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.profile-widget-main-menu-text {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	padding-left: 20px;
+}
+[class^="icon-"] {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	padding: 16px 24px 16px 240px;
+    font-family: 'mark-team-icon';
+    color: #c6bfb8;
+}
+.icon-account,
+.icon-gps-pointer {
+	font-size: 16px;
+}
+.icon-web-statistics,
+.icon-settings-key {
+    font-size: 15px;
+}
+.profile-widget-main-menu .icon-account:hover,
+.profile-widget-main-menu .icon-web-statistics:hover,
+.profile-widget-main-menu .icon-settings-key:hover,
+.profile-widget-main-menu .icon-gps-pointer:hover {
+	color: #e55f3b;
+	text-decoration: none;
+}
+.icon-account:before {
+    content: "\e900";
+}
+.icon-web-statistics:before {
+    content: "\e90e";
+}
+.icon-settings-key:before {
+    content: "\e90b";
+}
+.icon-gps-pointer:before {
+    content: "\e905";
+}
+ 

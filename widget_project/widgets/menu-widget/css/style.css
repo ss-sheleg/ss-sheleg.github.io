@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'mark-team-icon';
+  src:  url('../fonts/mark-team-icon.eot?nv6uqa');
+  src:  url('../fonts/mark-team-icon.eot?nv6uqa#iefix') format('embedded-opentype'),
+    url('../fonts/mark-team-icon.ttf?nv6uqa') format('truetype'),
+    url('../fonts/mark-team-icon.woff?nv6uqa') format('woff'),
+    url('../fonts/mark-team-icon.svg?nv6uqa#mark-team-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mark-team-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+	background:#dbb6a3;
+}
+
+.menu-widget-topmenu{
+	width:632px;
+	height:65px;
+	margin-top:251px;
+	margin-left:93px;
+	border-radius:5px;
+	background:#f6f0ec;
+}
+.menu-widget-topmenu-content{
+	float: left;
+	width: 157.25px;
+	height:65px;
+	text-transform: uppercase;
+	font-family: 'open_sansbold';
+	font-size: 17px;
+	font-weight: normal;
+    font-style: normal;
+	background:#ffffff;
+}
+.menu-widget-topmenu-content-centre-left,.menu-widget-topmenu-content-centre-right,.menu-widget-topmenu-content-right{
+	margin-left:1px;
+}
+.menu-widget-topmenu-content-left{
+	border-radius:5px 0 0 5px;
+}
+.menu-widget-topmenu-content-right{
+	border-radius:0 5px 5px 0;
+}
+
+li a {           
+	display: block;  	
+	height:45px;
+	padding-left:30px;
+	padding-top:17px;
+	text-decoration: none;    
+	color: #8e8071; 
+}
+
+.menu-widget-topmenu-content:hover{
+	background: #f8f3f0;
+	border-bottom:3px solid #4daf7b;
+	height:62px;
+}
+
+.menu-widget-topmenu-content-left:hover{
+	border-radius:5px 0 0 0;
+}
+.menu-widget-topmenu-content-right:hover{
+	border-radius:0 5px 0 0;
+}
+
+ li a:active{      
+	color: #64584c;
+	box-shadow: 0px 0px 15px 5px #ad8f72;
+	height:48px;
+	border-radius:5px;
+	}
+	
+.menu-widget-topmenu-content:active{
+	border-bottom:0px;
+
+}
+
+.menu-icon{
+    position:relative;
+	left:-6px;
+	top:4px;
+	font-size:25px;
+}
+.icon-gps-pointer:before {
+	content: "\e905";
+}
+.icon-heart:before{
+	content:"\e906";
+}
+.icon-account{
+	margin-left:-10px;
+	left:0;
+}
+.icon-account:before{
+	content:"\e900";
+}
+.icon-settings-gear{
+	margin-left:-10px;
+	left:0;
+}
+.icon-settings-gear:before{
+	content:"\e90a";
+}
+.unread-massages{
+	border-radius:50%;
+	background-color:#e55e3a;
+	width:15px;
+	height:15px;
+	display:block;
+	position:relative;
+	top:-30px;
+	left:100px;
+	font-size:11px;
+	line-height:14px;
+	text-align:center;
+	color:white;
+}
+
+
+

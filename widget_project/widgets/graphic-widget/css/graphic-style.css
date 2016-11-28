@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/opensans.ttf") format("truetype");
+    font-family: "Open Sans Semibold";
+    src: url("../fonts/OpenSansSemibold.ttf") format("truetype");
+    font-family: "mark-team-icon";
+    src: url("../fonts/mark-team-icon/fonts/mark-team-icon.eot");
+    src: url("../fonts/mark-team-icon/fonts/mark-team-icon.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/mark-team-icon/fonts/mark-team-icon.woff") format("woff"),
+    url("../fonts/mark-team-icon/fonts/mark-team-icon.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    background-color: lightgoldenrodyellow;
+}
+.graphic-widget {
+    position: absolute;
+    width: 283px;
+    height: 435px;
+    font-family: Open Sans, sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; 
+}
+
+.graphic-widget-bar-graph-wrapper {
+    position: absolute;
+    top: 81px;
+    z-index: 0;
+}
+.graphic-widget-background-line-diagram {
+    position: absolute;
+    width: 283px;
+    height: 80px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: transparent;
+    z-index: 1;
+}
+.graphic-widget-background-top-line-diagram {
+     position: absolute;
+     width: 283px;
+     height: 80px;
+     border: none;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+     background-color: #54bc75;
+ }
+.graphic-widget-background-bottom-line-diagram {
+     position: absolute;
+     width: 283px;
+     height: 71px;
+     top: 80px;
+     border: none;
+     background-color: #4daf7b;
+ }
+.graphic-widget-line-diagram-indication {
+    position: absolute;
+    width: 270px;
+    height: 37px;
+    top: 22px;
+    left: 31px;
+    color: #ffffff;
+    line-height: 0;
+    letter-spacing: -0.04em;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.graphic-widget-line-diagram-indication-text1 {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    color: #ffffff;
+    font-size: 24px;
+
+}
+.graphic-widget-line-diagram-indication-text2 {
+    position: absolute;
+    top: 29px;
+    left: 13px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.graphic-widget-line-diagram {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: auto;
+    height: auto;
+    color: white;
+    z-index: auto;
+}
+.graphic-widget-date-place {
+    position: absolute;
+    top: 183px;
+    left: 20px;
+    width: 241px;
+    height: 31px;
+    border: none;
+}
+.graphic-widget-date-time-indication {
+    font-size: 12px;
+    color: #897869;
+    line-height: 2px;
+    margin-top: 5px;
+    letter-spacing: -0.04em;
+}
+.graphic-widget-position-indication {
+    font-size: 18px;
+    color: #897869;
+    line-height: 0;
+    margin-top: 8px;
+    letter-spacing: -0.04em;
+}
+.graphic-widget-trading {
+    position: absolute;
+    left: 20px;
+    top: 237px;
+    width: 241px;
+    height: 68px;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+}
+.graphic-widget-trading1 {
+    float: left;
+    width: 120px;
+    height: 68px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #f6f0ec;
+}
+.graphic-widget-trading2 {
+    float: right;
+    width: 120px;
+    height: 68px;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #f6f0ec;
+}
+.graphic-widget-trading1-indication {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 16px;
+    color: #897869;
+    font-family: "Open Sans Semibold";
+    text-align: center;
+    line-height: 0px;
+}
+.graphic-widget-trading2-indication {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 28px;
+    color: #897869;
+    font-family: "Open Sans Semibold";
+    text-align: center;
+    line-height: 0px;
+}
+.graphic-widget-background-bar-chart {
+    position: absolute;
+    left: 20px;
+    top: 331px;
+    width: 241px;
+    height: 64px;
+    border: none;
+    background-color: transparent;
+}
+.graphic-widget-bar-chart-header {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 124px;
+    height: 16px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.04em;
+    color: #b4b0aa;
+}
+.graphic-widget-year-changing-window-header {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    height: 16px;
+    width: 94px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.04em;
+    color: #b4b0aa;
+}
+.graphic-widget-bar-chart {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 124px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+.graphic-widget-year-changing-window {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 94px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #4daf7b;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+}

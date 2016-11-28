@@ -1,0 +1,354 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Widget Page Styles*/
+
+body {
+    background-color: #e2c397;
+}
+
+.statistic-round-diagram-widget {
+    width: 308px;
+    height: 565px;
+    position: absolute;
+    color: #8e8071;
+    top: 100px;
+    left: 100px;
+    font-family: OpenSansBold, sans-serif;
+}
+
+.statistic-round-diagram-widget-header {
+    position: relative;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.statistic-round-diagram-widget-title {
+    position: absolute;
+    width: 151px;
+    height: 35px;
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-transition: background-color 0.3s ease-in 0.3s, color 0.3s ease-in 0.3s;
+    -moz-transition: background-color 0.3s ease-in 0.3s, color 0.3s ease-in 0.3s;
+    -o-transition: background-color 0.3s ease-in 0.3s, color 0.3s ease-in 0.3s;
+    transition: background-color 0.3s ease-in 0.3s, color 0.3s ease-in 0.3s;
+}
+
+.statistic-round-diagram-widget-title:hover {
+    cursor: pointer;
+}
+
+.statistic-round-diagram-widget-title-left {
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.statistic-round-diagram-widget-title-right {
+    right: 0;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.statistic-round-diagram-widget-content {
+    position: relative;
+    background-color: #fff;
+    height: 440px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.statistic-round-diagram-widget-color-change,
+.statistic-round-diagram-widget-data-change {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 65px;
+}
+
+.statistic-round-diagram-widget-color-change span {
+    color: #8e8071;
+    font-size: 14px;
+    margin-top: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.color-picker-block {
+    width: 80px;
+    height: 35px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.color-picker-block-submit-button,
+.data-change-block-submit-button {
+    width: 120px;
+    height: 35px;
+    background-color: #e96e48;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin: 40px auto;
+    display: block;
+    outline: none;
+}
+
+.color-picker-block-submit-button:hover,
+.data-change-block-submit-button:hover {
+    cursor: pointer;
+}
+
+
+.statistic-round-diagram-widget-data-change input {
+    width: 60px;
+    height: 15px;
+    float: left;
+}
+
+.statistic-round-diagram-widget-data-change fieldset {
+    border-top: 2px solid #e5d4c2;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.statistic-round-diagram-widget-data-change fieldset legend {
+    text-align: center;
+}
+
+.statistic-round-diagram-widget-data-change fieldset span {
+    font-size: 14px;
+}
+
+.statistic-round-diagram-widget-diagram-title,
+.statistic-round-diagram-widget-color-change-title,
+.statistic-round-diagram-widget-data-change-title {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    top: 43px;
+    width: 100%;
+}
+
+.month-report {
+    display: none;
+}
+
+#linear-diagram {
+    position: absolute;
+    left: 5px;
+    top: 85px;
+}
+
+#dougnut-diagram {
+    position: absolute;
+    left: 37px;
+    top: 85px;
+}
+
+#dougnut-diagram path {
+    fill: none;
+    stroke-width: 50;
+}
+
+.statistic-round-diagram-widget-content-month-data p {
+    position: absolute;
+    top: 365px;
+    left: 110px;
+}
+
+.statistic-round-diagram-widget-content-month-data-line {
+    position: absolute;
+    font-size: 10px;
+    left: 10px;
+    color: #555;
+    z-index: 1;
+}
+
+.line-half {
+    top: 200px;
+}
+
+.line-quarter {
+    top: 263px;
+}
+
+.line-three-quarter {
+    top: 135px;
+}
+
+.statistic-round-diagram-widget-content-month-data-days {
+    font-size: 0.51em;
+    position: absolute;
+    top: 335px;
+    left: 7px;
+}
+
+.data-days-1-9 {
+    letter-spacing: 0.2em;
+}
+
+.data-days-10-30 {
+    left: 95px;
+    letter-spacing: -0.058em;
+}
+
+.statistic-round-diagram-widget-diagram-total-wrapper {
+    position: absolute;
+    top: 175px;
+    left: 95px;
+    width: 120px;
+    text-align: center;
+}
+
+.statistic-round-diagram-widget-diagram-files {
+    font-size: 14px;
+}
+
+.statistic-round-diagram-widget-diagram-space {
+    font-size: 33px;
+}
+
+.statistic-round-diagram-widget-data-wrapper {
+    position: absolute;
+    bottom: 0;
+    height: 87px;
+    width: 100%;
+}
+
+.statistic-round-diagram-widget-data {
+    width: 102px;
+    height: 62px;
+    position: absolute;
+    background-color: #f6f0ec;
+    text-align: center;
+    color: #a09b96;
+    padding-top: 20px;
+}
+
+.statistic-round-diagram-widget-data span {
+    font-size: 29px;
+    letter-spacing: -0.05em;
+}
+
+.statistic-round-diagram-widget-data-audio {
+    left: 0;
+}
+
+.statistic-round-diagram-widget-data-video {
+    left: 103px;
+}
+
+.statistic-round-diagram-widget-data-photo {
+    right: 0;
+}
+
+.statistic-round-diagram-widget-footer {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: #776b5e;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.statistic-round-diagram-widget-footer-button {
+    position: absolute;
+    width: 103px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+    padding: 15px 0;
+}
+
+.statistic-round-diagram-widget-footer-button p {
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: -0.02em;
+    font-size: 10px;
+}
+
+.statistic-round-diagram-widget-footer-button:hover {
+    background-color: #64584c;
+    cursor: pointer;
+}
+
+.statistic-round-diagram-widget-footer-upload {
+    left: 0;
+    border-bottom-left-radius: 5px;
+}
+
+.statistic-round-diagram-widget-footer-share {
+    left: 103px;
+    width: 102px;
+}
+
+.statistic-round-diagram-widget-footer-back-up {
+    right: 0;
+    border-bottom-right-radius: 5px;
+}
+
+[class^="icon-"] {
+    font-family: 'mark-team-icon';
+}
+
+.icon-upload-cloud:before {
+    content: "\e90d";
+}
+
+.icon-share:before {
+    content: "\e90c";
+}
+
+.icon-back-up:before {
+    content: "\e902";
+}

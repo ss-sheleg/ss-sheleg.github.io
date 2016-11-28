@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>contact-form-widget</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact-form-widget-styles.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="background">
+
+    <form id="contact-form-widget">
+            <!--text section-->
+            <div class="contact-form-widget-text-section">
+
+                <label class="contact-form-widget-text-section-contacts-form-name">Contacts</label>
+                <input class="contact-form-widget-text-section-contacts-form" type="email" name="mailcontacts" placeholder="Add mail">
+                <span class="contact-form-widget-text-section-contacts-form-add-button icon-add-button" data-active="true"></span>
+
+                <div class="contact-form-widget-text-section-emails"></div>
+
+                <div class="contact-form-widget-text-section-valide-comment"></div>
+
+                <label class="contact-form-widget-text-section-subject-form-name">Subject</label>
+                <input class="contact-form-widget-text-section-subject-form" id="text-section-subject-form" type="text" name="mailsubject" placeholder="You can add a subject">
+
+                <label class="contact-form-widget-text-section-message-form-name">Message</label>
+                <textarea class="contact-form-widget-text-section-message-form" rows="50" name="mailmessage"
+                              placeholder="Leave your message here"></textarea>
+
+            </div>
+
+            <!--send section-->
+            <div class="contact-form-widget-send-section">
+
+                <div class="contact-form-widget-send-section-copy-checkbox-side">
+                    <input class="contact-form-widget-send-section-copy-checkbox" id="copycheckbox" type="checkbox"
+                           name="copycheckbox">
+                    <label for="copycheckbox"><span
+                            class="contact-form-widget-send-section-copy-checkbox-name">Save a copy</span></label>
+                </div>
+
+                <div class="contact-form-widget-send-section-button-side">
+                    <span class="contact-form-widget-send-section-button-block"></span>
+                    <button type="button" class="contact-form-widget-send-section-button">
+                        <i class="icon-send-button"></i>
+                        Send Mail
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="contact-form-widget-send-message">
+
+            </div>
+    </form>
+</div>
+
+<!-- js script -->
+<script src="libs/jQuery/jquery-3.1.0.min.js"></script>
+<script src="js/contact-form-widget-mail-script.js"></script>
+
+
+</body>
+</html>

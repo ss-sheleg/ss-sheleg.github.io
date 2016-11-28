@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation-widget</title>
+    <link rel="stylesheet" href="css/navigation-widget.css">
+    <link rel="stylesheet" href="css/navigation-widget-fonts.css">
+</head>
+<body id="gradient">
+    <div class="navigation-widget">
+        <nav class="navigation-widget-menu">
+            <ul>
+                <li class="navigation-widget-menu-item navigation-widget-menu-my-profile" data-active="false">
+                    <div class="navigation-widget-menu-item-title-wrapper">
+                        <span class="icon-my-profile"></span>
+                        <h2 class="navigation-widget-menu-item-title">my profile</h2>
+                    </div>
+                </li>
+                <li>
+                    <ul class="navigation-widget-menu-dropbox my-profile-dropdox">
+                        <li>invite friends</li>
+                        <li>find friends</li>
+                        <li>log out</li>
+                    </ul>
+                </li>
+                <li class="navigation-widget-menu-item navigation-widget-menu-edit" data-active="false">
+                    <div class="navigation-widget-menu-item-title-wrapper">
+                        <span class="icon-edit"></span>
+                        <h2 class="navigation-widget-menu-item-title">edit</h2>
+                    </div>
+                </li>
+                <li>
+                    <ul class="navigation-widget-menu-dropbox edit-dropdox">
+                        <li>status</li>
+                        <li>profile info</li>
+                        <li>password</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-widget-sale-block">
+            <div class="navigation-widget-sale-block-triangles upper-triangle"></div>
+            <div class="navigation-widget-sale-block-rect"></div>
+            <div class="navigation-widget-sale-block-flag">
+                <p class="navigation-widget-sale-block-text">sale</p>
+                <p class="navigation-widget-sale-block-text navigation-widget-sale-block-persentage">20%</p>
+            </div>
+            <div class="navigation-widget-sale-block-triangles lower-triangle"></div>
+        </div>
+    </div>
+    <script src="libs/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="js/navigation-widget.js"></script>
+</body>
+</html>
